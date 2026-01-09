@@ -1,2 +1,5 @@
-# Ayurvedic-Clinical-Website
-Our Ayurvedic clinical website offers a digital platform to explore traditional treatments, holistic wellness services, and clinical expertise. Patients can learn about therapies, access reliable information, and book consultations through a clean, secure, and user-friendly experience.
+This project is a Flask-based Ayurvedic clinical website that provides information on traditional treatments, wellness services, and consultation booking. It includes a structured frontend with templates and static assets, and a Python backend for routing and content delivery.
+
+Tech Stack
+	•	Python (Flask)
+	•	HTML, CSS, JavaScript
