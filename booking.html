@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}Book Appointment | Dr. Abdul Rahiman Ayurvedic Clinic{% endblock %}
+
+{% block content %}
+<section class="booking-page section container">
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem;">
+        <div>
+            <span class="section__subtitle">Schedule Your Visit</span>
+            <h1 class="section__title" style="text-align: left; padding-bottom: 0;">Online Appointment</h1>
+            <p style="margin-top: 1.5rem;">
+                Take the first step towards a healthier you. Fill out the form below, and our clinic
+                coordinator will contact you to confirm the date and time of your consultation.
+            </p>
+
+            <div
+                style="margin-top: 3rem; background-color: var(--container-color); padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <h3 style="margin-bottom: 1rem;">Why Book with Us?</h3>
+                <ul style="display: grid; row-gap: 1rem;">
+                    <li><i class="fas fa-clock" style="color: var(--first-color);"></i> Minimal waiting time</li>
+                    <li><i class="fas fa-microscope" style="color: var(--first-color);"></i> Detailed initial diagnosis
+                    </li>
+                    <li><i class="fas fa-comments" style="color: var(--first-color);"></i> Free follow-up consultation
+                        (within 1 week)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="booking__form-container"
+            style="background-color: var(--container-color); padding: 2.5rem; border-radius: 1.5rem; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+            <form id="booking-form" class="grid" style="row-gap: 1.5rem;">
+                <div>
+                    <label for="name"
+                        style="display: block; margin-bottom: .5rem; font-weight: var(--font-medium);">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required
+                        style="width: 100%; padding: 1rem; border-radius: .5rem; background-color: var(--body-color); border: 1px solid transparent; transition: .3s;">
+                </div>
+
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <label for="phone"
+                            style="display: block; margin-bottom: .5rem; font-weight: var(--font-medium);">Phone
+                            Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone" required
+                            style="width: 100%; padding: 1rem; border-radius: .5rem; background-color: var(--body-color); border: 1px solid transparent; transition: .3s;">
+                    </div>
+                    <div>
+                        <label for="email"
+                            style="display: block; margin-bottom: .5rem; font-weight: var(--font-medium);">Email
+                            Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required
+                            style="width: 100%; padding: 1rem; border-radius: .5rem; background-color: var(--body-color); border: 1px solid transparent; transition: .3s;">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="concern"
+                        style="display: block; margin-bottom: .5rem; font-weight: var(--font-medium);">Primary Health
+                        Concern</label>
+                    <select id="concern" name="concern" required
+                        style="width: 100%; padding: 1rem; border-radius: .5rem; background-color: var(--body-color); border: 1px solid transparent; transition: .3s;">
+                        <option value="" disabled selected>Select a health issue</option>
+                        <option value="chronic_pain">Chronic Pain</option>
+                        <option value="digestive">Digestive Issues</option>
+                        <option value="skin">Skin Problems</option>
+                        <option value="diabetes">Diabetes/Metabolic</option>
+                        <option value="stress">Stress/Immunity</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <label for="date"
+                            style="display: block; margin-bottom: .5rem; font-weight: var(--font-medium);">Preferred
+                            Date</label>
+                        <input type="date" id="date" name="preferred_date" required
+                            style="width: 100%; padding: 1rem; border-radius: .5rem; background-color: var(--body-color); border: 1px solid transparent; transition: .3s;">
+                    </div>
+                    <div>
+                        <label for="time"
+                            style="display: block; margin-bottom: .5rem; font-weight: var(--font-medium);">Preferred
+                            Time</label>
+                        <select id="time" name="preferred_time" required
+                            style="width: 100%; padding: 1rem; border-radius: .5rem; background-color: var(--body-color); border: 1px solid transparent; transition: .3s;">
+                            <option value="morning">Morning (9AM - 1PM)</option>
+                            <option value="evening">Evening (4PM - 7PM)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="button" style="width: 100%; margin-top: 1rem;">Request Appointment</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<style>
+    input:focus,
+    select:focus {
+        border-color: var(--first-color) !important;
+        background-color: white !important;
+        box-shadow: 0 0 0 3px hsla(145, 25%, 38%, 0.1);
+    }
+</style>
+{% endblock %}

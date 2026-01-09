@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Our Treatments | Dr. Abdul Rahiman Ayurvedic Clinic{% endblock %}
+
+{% block content %}
+<section class="services-page section container">
+    <span class="section__subtitle">Healing Therapies</span>
+    <h1 class="section__title">Ayurvedic Treatments & Services</h1>
+    <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem;">
+        Ayurveda offers a comprehensive approach to health, focusing on restoring balance through natural
+        detoxification, herbal support, and dietary wisdom.
+    </p>
+
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <!-- Service 1 -->
+        <article class="services__card">
+            <h3 class="services__title">Panchakarma (Detoxification)</h3>
+            <p class="services__description">
+                A five-fold detoxification process to remove deep-seated toxins and rejuvenate the tissues.
+                Essential for chronic illnesses and preventive health.
+            </p>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="services__card">
+            <h3 class="services__title">Pain Management</h3>
+            <p class="services__description">
+                Specialized treatments for Spondylosis, Sciatica, Osteo-Arthritis, and Rheumatoid Arthritis
+                using traditional Kizhi and Vasti therapies.
+            </p>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="services__card">
+            <h3 class="services__title">Digestive & Metabolic Disorders</h3>
+            <p class="services__description">
+                Holistic management of Diabetes, Hyper-acidity, Constipation, and Fatty Liver through
+                Agni-balancing herbal protocols.
+            </p>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="services__card">
+            <h3 class="services__title">Stress & Sleep Disorders</h3>
+            <p class="services__description">
+                Shirodhara and other calming therapies to treat anxiety, insomnia, and migraines
+                caused by lifestyle stress.
+            </p>
+        </article>
+
+        <!-- Service 5 -->
+        <article class="services__card">
+            <h3 class="services__title">Skin & Hair Care</h3>
+            <p class="services__description">
+                Natural treatments for Psoriasis, Eczema, Acne, and premature hair loss by purifying the
+                blood and restoring Dosha balance.
+            </p>
+        </article>
+
+        <!-- Service 6 -->
+        <article class="services__card">
+            <h3 class="services__title">Respiratory Health</h3>
+            <p class="services__description">
+                Ayurvedic care for Chronic Sinusitis, Asthma, and Bronchial Allergies focused on
+                clearing the respiratory channels.
+            </p>
+        </article>
+    </div>
+</section>
+
+<section class="approach section container"
+    style="background-color: var(--first-color); color: white; border-radius: 2rem; margin-bottom: 4rem; padding: 3rem;">
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: center;">
+        <div>
+            <h2 style="color: white; margin-bottom: 1.5rem;">The Ayurvedic Approach</h2>
+            <p style="opacity: 0.9;">
+                Unlike modern medicine which often targets symptoms, Ayurveda looks at the whole individual.
+                We assess your body type, current imbalances, and environmental factors to create a path for
+                sustainable wellness.
+            </p>
+        </div>
+        <div style="border-left: 1px solid rgba(255,255,255,0.2); padding-left: 2rem;">
+            <ul style="display: grid; row-gap: 1rem;">
+                <li><i class="fas fa-check-circle"></i> Root cause analysis</li>
+                <li><i class="fas fa-check-circle"></i> Bio-individual treatment</li>
+                <li><i class="fas fa-check-circle"></i> No harmful side effects</li>
+                <li><i class="fas fa-check-circle"></i> Preventive & Curative focus</li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

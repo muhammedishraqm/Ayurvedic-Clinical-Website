@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Dr. Abdul Rahiman Ayurvedic Clinic{% endblock %}
+
+{% block content %}
+<!--==================== HERO ====================-->
+<section class="hero section" id="home">
+    <div class="hero__container container grid">
+        <div class="hero__content">
+            <span class="section__subtitle">Welcome to Holistic Healing</span>
+            <h1 class="hero__title">Ancient Wisdom for <br> Modern Well-being</h1>
+            <p class="hero__description">
+                Experience the profound healing power of traditional Ayurveda with Dr. Abdul Rahiman.
+                We specialize in natural treatments for chronic conditions and lifestyle balance.
+            </p>
+            <div class="hero__buttons">
+                <a href="/booking" class="button">Book Appointment</a>
+                <a href="/services" class="button button--ghost">Explore Treatments</a>
+            </div>
+        </div>
+
+        <div class="hero__img-container">
+            <img src="{{ url_for('static', filename='images/hero.png') }}" alt="Ayurvedic Treatment" class="hero__img">
+        </div>
+    </div>
+</section>
+
+<!--==================== ABOUT BRIEF ====================-->
+<section class="about section container">
+    <div class="grid">
+        <div class="about__content">
+            <span class="section__subtitle">About the Clinic</span>
+            <h2 class="section__title">Restoring Balance, Naturally</h2>
+            <p class="about__description">
+                At Dr. Abdul Rahiman Ayurvedic Clinic, we believe that health is a harmonious state of body, mind, and
+                spirit.
+                With over 15 years of experience, we provide personalized Ayurvedic care that addresses the root cause
+                of
+                your health concerns, not just the symptoms.
+            </p>
+            <a href="/about" class="button button--nav">Learn More About Dr. Rahiman</a>
+        </div>
+    </div>
+</section>
+
+<!--==================== SERVICES PREVIEW ====================-->
+<section class="services section" id="services">
+    <span class="section__subtitle">What We Offer</span>
+    <h2 class="section__title">Our Specialized Treatments</h2>
+
+    <div class="services__container container grid">
+        <div class="services__card">
+            <i class="fas fa-hand-holding-heart services__icon"></i>
+            <h3 class="services__title">Chronic Pain</h3>
+            <p class="services__description">Effective natural relief for arthritis, back pain, and joint issues.</p>
+        </div>
+
+        <div class="services__card">
+            <i class="fas fa-apple-alt services__icon"></i>
+            <h3 class="services__title">Digestive Care</h3>
+            <p class="services__description">Holistic treatment for acidity, IBS, and metabolic disorders.</p>
+        </div>
+
+        <div class="services__card">
+            <i class="fas fa-spa services__icon"></i>
+            <h3 class="services__title">Stress Relief</h3>
+            <p class="services__description">Calm your mind and restore your nervous system with traditional therapies.
+            </p>
+        </div>
+
+        <div class="services__card">
+            <i class="fas fa-shield-virus services__icon"></i>
+            <h3 class="services__title">Immunity Boost</h3>
+            <p class="services__description">Strengthen your natural defenses with Rasayana treatments.</p>
+        </div>
+    </div>
+</section>
+
+<!--==================== TESTIMONIALS ====================-->
+<section class="testimonials section container">
+    <span class="section__subtitle">Testimonials</span>
+    <h2 class="section__title">What Our Patients Say</h2>
+
+    <div class="testimonials__container grid">
+        <div class="services__card">
+            <p class="testimonial__text">
+                "I had chronic back pain for years. Dr. Rahiman's approach changed my life. Within 3 months, I was
+                pain-free."
+            </p>
+            <h3 class="testimonial__name">- Rajesh Kumar</h3>
+        </div>
+        <div class="services__card">
+            <p class="testimonial__text">
+                "The most professional and caring Ayurvedic clinic I've visited. The staff is wonderful and the
+                treatments are authentic."
+            </p>
+            <h3 class="testimonial__name">- Sarah Abraham</h3>
+        </div>
+    </div>
+</section>
+{% endblock %}
